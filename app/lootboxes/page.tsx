@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import { lootboxes } from '@/data/lootboxes'
 
 export const metadata: Metadata = {
-  title: 'Lootboxy — Odkryj Niesamowite Nagrody',
-  description: 'Otwórz lootboxy i zdobądź losowe nagrody: darmowe spiny, bonusy pieniężne i wiele więcej.',
+  title: 'Lootboxy Kasynowe — Żar, Płomień, Iskra i Easter Box',
+  description: 'Otwórz lootboxy od 15€ i zdobądź losowe nagrody: bonusy gotówkowe, darmowe spiny i obroty na kole fortuny. 4 rodzaje skrzynek, maksymalnie 3 zakupy dziennie.',
+  openGraph: {
+    title: 'Lootboxy Kasynowe — Żar, Płomień, Iskra i Easter Box',
+    description: '4 rodzaje lootboxów od 15€: losowe nagrody — bonusy gotówkowe, free spiny, Koło Fortuny. Do 3 zakupów dziennie.',
+    url: 'https://vulkanspiele-polska.pl/lootboxes/',
+  },
 }
 
 const rules = [

@@ -1,8 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Odpowiedzialna Gra — VulkanSpiele',
-  description: 'Odpowiedzialna gra w kasynie online. Jak rozpoznać uzależnienie od hazardu i gdzie szukać pomocy. Organizacje pomocowe w Polsce.',
+  title: 'Odpowiedzialna Gra — Pomoc i Wsparcie dla Graczy 18+',
+  description: 'Zasady odpowiedzialnej gry, narzędzia samoochrony i pomoc dla uzależnionych. Kontakty: Anonimowi Hazardziści, KCPU, telefon zaufania 116 123. Hazard 18+.',
+  openGraph: {
+    title: 'Odpowiedzialna Gra — Pomoc i Wsparcie dla Graczy 18+',
+    description: 'Narzędzia samoochrony, limity depozytów, samowykluczenie. Pomoc: Anonimowi Hazardziści, KCPU, telefon 116 123.',
+    url: 'https://vulkanspiele-polska.pl/odpowiedzialna-gra/',
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function OdpowiedzialnaGra() {

@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import WheelClient from './WheelClient'
 
 export const metadata: Metadata = {
-  title: 'Koło Fortuny — VulkanSpiele PL',
-  description: 'Zakręć kołem fortuny i wygraj bonusy, darmowe spiny i nagrody pieniężne!',
+  title: 'Koło Fortuny — 3 Darmowe Zakręcenia Dziennie',
+  description: 'Zakręć kołem fortuny i wylosuj bonus gotówkowy do 15€, 50 darmowych spinów lub bonus 120%. 3 darmowe szanse każdego dnia. Dostępne mnożniki x2, x5 i x10.',
+  openGraph: {
+    title: 'Koło Fortuny — 3 Darmowe Zakręcenia Dziennie',
+    description: 'Losuj bonus gotówkowy do 15€, 50 free spinów lub bonus 120%. 3 zakręcenia dziennie gratis, mnożniki do x10.',
+    url: 'https://vulkanspiele-polska.pl/wheel-of-fortune/',
+  },
 }
 
 export default function WheelOfFortunePage() {

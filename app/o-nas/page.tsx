@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'O Nas — VulkanSpiele',
-  description: 'O serwisie VulkanSpiele — niezależny portal afiliacyjny kasyn online. Kim jesteśmy, co robimy i jak zarabiamy.',
+  title: 'O Nas — Niezależny Portal Afiliacyjny Kasyn Online',
+  description: 'VulkanSpiele to niezależny portal afiliacyjny kasyn online dla polskich graczy. Rzetelne recenzje, rankingi i informacje o bonusach. Działamy od 2024 roku.',
+  openGraph: {
+    title: 'O Nas — Niezależny Portal Afiliacyjny Kasyn Online',
+    description: 'Niezależny portal afiliacyjny dla polskich graczy. Rzetelne recenzje kasyn, aktualne bonusy i odpowiedzialna gra.',
+    url: 'https://vulkanspiele-polska.pl/o-nas/',
+  },
 }
 
 export default function ONas() {

@@ -8,11 +8,24 @@ import CookieBanner from '@/components/layout/CookieBanner'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'VulkanSpiele Casino PL — Najlepsze Gry Online',
-  description: 'Zagraj w najlepsze automaty online, kasyno na żywo i obstaw zakłady sportowe w VulkanSpiele.',
+  metadataBase: new URL('https://vulkanspiele-polska.pl'),
+  title: {
+    default: 'VulkanSpiele Casino PL — Automaty, Live Casino & Zakłady Sportowe',
+    template: '%s | VulkanSpiele PL',
+  },
+  description: 'Zagraj w najlepsze automaty online, kasyno na żywo i obstaw zakłady sportowe w VulkanSpiele. Bonus powitalny do 2500€ + 350 darmowych spinów.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
+  },
+  openGraph: {
+    siteName: 'VulkanSpiele PL',
+    locale: 'pl_PL',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

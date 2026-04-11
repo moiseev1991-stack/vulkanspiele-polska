@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Regulamin — VulkanSpiele',
-  description: 'Regulamin serwisu VulkanSpiele. Zasady korzystania ze strony, ograniczenia wiekowe 18+, wyłączenie odpowiedzialności.',
+  title: 'Regulamin Serwisu — Zasady Korzystania 18+',
+  description: 'Regulamin serwisu afiliacyjnego VulkanSpiele. Zasady korzystania, ograniczenia wiekowe 18+, charakter afiliacyjny portalu, wyłączenie odpowiedzialności i prawa autorskie.',
+  openGraph: {
+    title: 'Regulamin Serwisu — Zasady Korzystania 18+',
+    description: 'Zasady korzystania z serwisu afiliacyjnego VulkanSpiele. Ograniczenia wiekowe 18+, prawa autorskie, wyłączenie odpowiedzialności.',
+    url: 'https://vulkanspiele-polska.pl/regulamin/',
+  },
 }
 
 export default function Regulamin() {

@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Polityka Prywatności — VulkanSpiele',
-  description: 'Polityka prywatności serwisu VulkanSpiele. Informacje o przetwarzaniu danych osobowych, RODO, cookies i prawach użytkownika.',
+  title: 'Polityka Prywatności — RODO i Ochrona Danych Osobowych',
+  description: 'Polityka prywatności VulkanSpiele: przetwarzanie danych osobowych zgodnie z RODO, rodzaje gromadzonych danych, prawa użytkownika i kontakt do administratora.',
+  openGraph: {
+    title: 'Polityka Prywatności — RODO i Ochrona Danych Osobowych',
+    description: 'Przetwarzanie danych zgodnie z RODO, prawa użytkownika (dostęp, usunięcie, sprzeciw) i kontakt do administratora.',
+    url: 'https://vulkanspiele-polska.pl/polityka-prywatnosci/',
+  },
 }
 
 export default function PolitykaPrywatnosci() {

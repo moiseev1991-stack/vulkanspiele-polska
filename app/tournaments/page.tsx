@@ -4,8 +4,13 @@ import { games } from '@/data/games'
 import TournamentCard from '@/components/tournaments/TournamentCard'
 
 export const metadata: Metadata = {
-  title: 'Turnieje Kasynowe — VulkanSpiele PL',
-  description: 'Weź udział w turniejach kasynowych i walcz o ogromne nagrody w VulkanSpiele.',
+  title: 'Turnieje Kasynowe Online 2026 — Pule Nagród do 10 000€',
+  description: 'Aktywne turnieje: Wielkanocny (10 000€) i Środkowotygodniowy Rush (2 000€). Graj w sloty, zbieraj punkty i walcz o nagrody. Nowe turnieje co tydzień w VulkanSpiele.',
+  openGraph: {
+    title: 'Turnieje Kasynowe Online 2026 — Pule Nagród do 10 000€',
+    description: 'Aktywne turnieje: Wielkanocny (10 000€) i Środkowotygodniowy Rush (2 000€). Nowe turnieje co tydzień.',
+    url: 'https://vulkanspiele-polska.pl/tournaments/',
+  },
 }
 
 export default function TournamentsPage() {

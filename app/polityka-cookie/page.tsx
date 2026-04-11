@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Polityka Cookie — VulkanSpiele',
-  description: 'Polityka plików cookies serwisu VulkanSpiele. Jakie cookies używamy, w jakim celu i jak nimi zarządzać.',
+  title: 'Polityka Cookie — Zarządzanie Plikami Cookie',
+  description: 'Polityka cookie VulkanSpiele: rodzaje plików cookies (techniczne, analityczne, marketingowe, afiliacyjne), cel ich używania i instrukcja zarządzania w przeglądarce.',
+  openGraph: {
+    title: 'Polityka Cookie — Zarządzanie Plikami Cookie',
+    description: 'Pliki cookies techniczne, analityczne, marketingowe i afiliacyjne. Jak nimi zarządzać w Chrome, Firefox, Edge i Safari.',
+    url: 'https://vulkanspiele-polska.pl/polityka-cookie/',
+  },
 }
 
 export default function PolitykaCookie() {

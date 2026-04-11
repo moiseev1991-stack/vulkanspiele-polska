@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import PromotionsClient from './PromotionsClient'
 
 export const metadata: Metadata = {
-  title: 'Promocje i Bonusy — VulkanSpiele PL',
-  description: 'Skorzystaj z bonusów powitalnych, darmowych spinów i promocji sieciowych w VulkanSpiele.',
+  title: 'Promocje Kasynowe 2026 — Bonusy, Turnieje i Oferty Sieciowe',
+  description: 'Wszystkie aktywne promocje VulkanSpiele: bonus Highroller 200%, turnieje sieciowe Endorphina, Gamzix i Platipus z pulami do 12 000 000€. Sprawdź oferty.',
+  openGraph: {
+    title: 'Promocje Kasynowe 2026 — Bonusy, Turnieje i Oferty Sieciowe',
+    description: 'Bonus Highroller 200%, misje, lootboxy i turnieje sieciowe z pulami do 12 000 000€.',
+    url: 'https://vulkanspiele-polska.pl/promotions/',
+  },
 }
 
 export default function PromotionsPage() {

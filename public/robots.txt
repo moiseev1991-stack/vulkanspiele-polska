@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /_next/
+Disallow: /404
+Disallow: /*.txt$
+
+Sitemap: https://vulkanspiele-polska.pl/sitemap.xml
