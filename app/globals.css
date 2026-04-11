@@ -3,25 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0000;
+  --foreground: #ffffff;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(ellipse 120% 55% at 50% 0%, #1e0000 0%, #0d0000 45%, #060000 100%);
+  font-family: 'Inter', sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Game card: pulsing red glow ────────────────────────── */
+@keyframes card-glow-pulse {
+  0%, 100% { box-shadow: 0 2px 14px rgba(140,0,0,0.14); }
+  50%       { box-shadow: 0 4px 32px rgba(210,0,0,0.55), 0 0 18px rgba(255,50,0,0.22); }
+}
+
+/* ── Game card: diagonal shine sweep ───────────────────── */
+@keyframes card-shine-sweep {
+  0%, 5%    { transform: skewX(-12deg) translateX(-130%); }
+  20%, 100% { transform: skewX(-12deg) translateX(230%); }
+}
+
+.game-card-glow {
+  animation: card-glow-pulse 3.5s ease-in-out infinite;
+}
+
+.game-card-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  pointer-events: none;
+  z-index: 5;
+  background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.07) 50%, transparent 100%);
+  animation: card-shine-sweep 5s ease-in-out infinite;
+}
+
+/* ── Hexagon clip-path utility ──────────────────────────── */
+.hex-clip {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* ── Wheel of fortune: laser background pulse ──────────── */
+@keyframes laser-pulse {
+  0%, 100% { opacity: 0.07; }
+  50%       { opacity: 0.16; }
+}
+
+.wheel-laser {
+  animation: laser-pulse 4s ease-in-out infinite;
 }
