@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Dark background -->
+  <rect width="32" height="32" rx="6" fill="#0d0000"/>
+
+  <!-- Outer volcano triangle -->
+  <polygon points="16,4 27,24 5,24" fill="#CC0000"/>
+
+  <!-- Inner flame triangle -->
+  <polygon points="16,9 23,22 9,22" fill="#FF4400"/>
+
+  <!-- Hot core glow -->
+  <polygon points="16,13 20,21 12,21" fill="#FF7700" opacity="0.7"/>
+
+  <!-- Lava drops -->
+  <circle cx="12" cy="27" r="2"   fill="#FFD700"/>
+  <circle cx="16.5" cy="28.5" r="1.6" fill="#FFD700"/>
+  <circle cx="21" cy="27" r="1.4" fill="#FFC107"/>
+</svg>
