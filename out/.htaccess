@@ -1,6 +1,6 @@
 Options -MultiViews
 RewriteEngine On
-RewriteBase /
+RewriteBase /out/
 
 # Serve pre-rendered HTML files for clean URLs
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -11,4 +11,4 @@ RewriteRule ^(.+)$ $1.html [L]
 # Fallback to index.html for SPA-style routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . /out/index.html [L]
