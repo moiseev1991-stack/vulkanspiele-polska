@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CookieBanner from '@/components/layout/CookieBanner'
+import MobileBottomNav from '@/components/layout/MobileBottomNav'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
   },
   description: 'Zagraj w najlepsze automaty online, kasyno na żywo i obstaw zakłady sportowe w VulkanSpiele. Bonus powitalny do 2500€ + 350 darmowych spinów.',
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
+    icon: '/favicon.jpg',
+    shortcut: '/favicon.jpg',
   },
   openGraph: {
     siteName: 'VulkanSpiele PL',
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: 'la6k1JKN2_6ORk7JH05H9z8nM2Ty2FqipJtYyygZ4jQ',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,9 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pl" className={inter.variable}>
       <body className="bg-bgDark text-white antialiased font-sans min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />
         <CookieBanner />
+        <MobileBottomNav />
       </body>
     </html>
   )

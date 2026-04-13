@@ -37,18 +37,20 @@ export default function GameCard({ game, size = 'md', index = 0 }: GameCardProps
 
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col items-center justify-center gap-2 z-10">
-            <button
+            <a
+              href="/go/"
               className="text-white text-xs font-bold px-6 py-2 rounded-md hover:opacity-90 transition-opacity"
               style={{ background: '#CC0000' }}
             >
               Zagraj
-            </button>
-            <button
+            </a>
+            <a
+              href="/go/"
               className="text-white text-xs px-6 py-1.5 rounded-md hover:border-gray-400 transition-colors"
               style={{ border: '1px solid #666' }}
             >
               Demo
-            </button>
+            </a>
           </div>
         </div>
 
@@ -72,9 +74,9 @@ export default function GameCard({ game, size = 'md', index = 0 }: GameCardProps
       </div>
 
       {/* Title + provider */}
-      <div className="mt-1.5 px-0.5">
-        <p className="text-sm font-semibold text-white truncate">{game.title}</p>
-        <p className="text-xs text-gray-500 truncate">{game.provider}</p>
+      <div className="mt-1 px-0.5">
+        <p className="text-[11px] sm:text-sm font-semibold text-white truncate">{game.title}</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 truncate">{game.provider}</p>
       </div>
     </div>
   )

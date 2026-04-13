@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import HallOfFameClient from './HallOfFameClient'
 
 export const metadata: Metadata = {
-  title: 'Galeria Sław — Największe Wygrane w VulkanSpiele Casino PL',
-  description: 'Zobacz największe wygrane graczy VulkanSpiele na żywo — wygrane do 100 000 RON i 15 000€. Ranking zwycięzców miesiąca i przegląd aktywnych graczy w czasie rzeczywistym.',
+  title: 'Vulkan Vegas Największe Wygrane Rekordy Graczy 2026',
+  description: 'Szczegółowa analiza rekordowych wygranych w Vulkan Vegas – prawdziwe historie graczy z Polski, weryfikacja wypłat, strategie zwycięzców i porównanie z konkurencją. Eksperci ujawniają mechanizmy największych triumfów.',
   openGraph: {
-    title: 'Galeria Sław — Największe Wygrane w VulkanSpiele Casino PL',
-    description: 'Największe wygrane na żywo: do 100 000 RON i 15 000€. Ranking zwycięzców i aktywni gracze w czasie rzeczywistym.',
+    title: 'Vulkan Vegas Największe Wygrane Rekordy Graczy 2026',
+    description: 'Szczegółowa analiza rekordowych wygranych w Vulkan Vegas – prawdziwe historie graczy z Polski, weryfikacja wypłat, strategie zwycięzców i porównanie z konkurencją.',
     url: 'https://vulkanspiele-polska.pl/hall-of-fame/',
   },
 }

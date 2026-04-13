@@ -142,9 +142,12 @@ export default function PromotionsClient() {
                   Bonus powitalny<br />w kasynie
                 </h2>
                 <p className="text-gold font-bold text-lg mb-4">Do 2 500 € + 350 FS</p>
-                <button className="bg-brand text-white font-bold text-sm px-6 py-2.5 rounded-md hover:bg-[#8B0000] transition">
+                <a href="/go/" className="bg-brand text-white font-bold text-sm px-6 py-2.5 rounded-md hover:bg-[#8B0000] transition">
                   Czytaj więcej
-                </button>
+                </a>
+                <p className="text-white/50 text-xs mt-3">
+                  Masz <a href="/kod-promocyjny/" className="text-gold underline hover:text-yellow-300 transition">kod promocyjny</a>? Wprowadź go tutaj.
+                </p>
               </div>
 
               {/* Картинка (если есть) */}
@@ -190,9 +193,9 @@ export default function PromotionsClient() {
                 </h2>
                 <p className="text-white text-sm mb-1">Postaw swój pierwszy zakład i otrzymaj</p>
                 <p className="text-gold font-bold text-lg mb-4">DO 1 000 € na swój depozyt</p>
-                <button className="bg-brand text-white font-bold text-sm px-6 py-2.5 rounded-md hover:bg-[#8B0000] transition">
+                <a href="/go/" className="bg-brand text-white font-bold text-sm px-6 py-2.5 rounded-md hover:bg-[#8B0000] transition">
                   Czytaj więcej
-                </button>
+                </a>
               </div>
 
               {/* Картинка (если есть) */}
@@ -220,7 +223,15 @@ export default function PromotionsClient() {
       {/* ── Kasyno ── */}
       {showCasino && (
         <section className="py-4">
-          <h2 className="text-base font-bold text-white mb-4">Kasyno</h2>
+          <h2 className="text-base font-bold text-white mb-4">
+            Kasyno
+            <span className="ml-4 text-xs font-normal text-white/40">
+              Chcesz grać bez wpłaty?{' '}
+              <a href="/bonus-bez-depozytu/" className="text-gold underline hover:text-yellow-300 transition">
+                Bonus bez depozytu
+              </a>
+            </span>
+          </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {casinoPromos.map((promo) => (
               <div

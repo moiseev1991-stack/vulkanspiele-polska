@@ -32,7 +32,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex items-center justify-between h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
-          <Image src="/images/logo2.png" alt="VulkanSpiele" width={140} height={52} priority />
+          <Image src="/images/logo-official.png" alt="Vulkan Spiele" width={110} height={44} priority />
         </Link>
 
         {/* Desktop Nav */}
@@ -111,14 +111,30 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile burger */}
-        <button
-          className="lg:hidden text-white p-2"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menu"
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: кнопки + бургер */}
+        <div className="lg:hidden flex items-center gap-1.5">
+          <Link
+            href="/go/"
+            className="text-white text-[11px] font-semibold px-2.5 py-1.5 rounded-md"
+            style={{ border: '1px solid #555' }}
+          >
+            Zaloguj
+          </Link>
+          <Link
+            href="/go/"
+            className="text-black text-[11px] font-bold px-2.5 py-1.5 rounded-md"
+            style={{ background: '#FFD700' }}
+          >
+            Rejestracja
+          </Link>
+          <button
+            className="text-white p-1.5"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Menu"
+          >
+            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile drawer */}

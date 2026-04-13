@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import HomeClient from './HomeClient'
 
 export const metadata: Metadata = {
-  title: 'VulkanSpiele Casino PL — Automaty, Live Casino & Zakłady Sportowe',
-  description: 'Zagraj w tysiące automatów, kasyno na żywo z prawdziwymi krupierami i obstaw zakłady sportowe. Bonus powitalny do 2500€ + 350 FS. Graj odpowiedzialnie 18+.',
+  title: 'Vulkanspiele Polska Oficjalne Kasyno Online Vulkan Spiele PL',
+  description: 'Vulkanspiele Polska to oficjalne kasyno casino online. Vulkan Spiele PL opinie i recenzje od graczy. Sprawdź oferty kasyno vulkanspiele i zagraj na oficjalnym serwisie.',
   openGraph: {
-    title: 'VulkanSpiele Casino PL — Automaty, Live Casino & Zakłady Sportowe',
-    description: 'Zagraj w tysiące automatów, kasyno na żywo z prawdziwymi krupierami i obstaw zakłady sportowe. Bonus powitalny do 2500€ + 350 FS.',
+    title: 'Vulkanspiele Polska Oficjalne Kasyno Online Vulkan Spiele PL',
+    description: 'Vulkanspiele Polska to oficjalne kasyno casino online. Vulkan Spiele PL opinie i recenzje od graczy.',
     url: 'https://vulkanspiele-polska.pl/',
   },
 }

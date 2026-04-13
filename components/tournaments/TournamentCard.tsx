@@ -295,12 +295,13 @@ export default function TournamentCard({ tournament, games, variant = 'active' }
 
             {/* CTA buttons */}
             <div className="flex gap-3">
-              <button
+              <a
+                href="/go/"
                 className="text-black text-xs font-black px-6 py-2.5 rounded-lg transition-all duration-200 hover:brightness-110"
                 style={{ background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)', boxShadow: '0 4px 16px rgba(255,180,0,0.3)' }}
               >
                 Czytaj więcej
-              </button>
+              </a>
               <button
                 className="text-white text-xs font-semibold px-6 py-2.5 rounded-lg transition-all duration-200"
                 style={{ background: 'rgba(160,60,255,0.15)', border: '1px solid rgba(160,60,255,0.35)' }}
@@ -437,10 +438,10 @@ export default function TournamentCard({ tournament, games, variant = 'active' }
 
         {/* Buttons */}
         <div className="flex gap-2 mb-5">
-          <Link href="#" className="text-black font-bold text-sm px-6 py-2 rounded-lg hover:bg-yellow-400 transition" style={{ background: '#FFD700' }}>
+          <Link href="/go/" className="text-black font-bold text-sm px-6 py-2 rounded-lg hover:bg-yellow-400 transition" style={{ background: '#FFD700' }}>
             Weź udział
           </Link>
-          <Link href="#" className="text-white text-sm px-6 py-2 rounded-lg hover:border-gray-400 transition" style={{ border: '1px solid #555' }}>
+          <Link href="/go/" className="text-white text-sm px-6 py-2 rounded-lg hover:border-gray-400 transition" style={{ border: '1px solid #555' }}>
             Czytaj więcej
           </Link>
         </div>
