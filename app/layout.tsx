@@ -16,8 +16,9 @@ export const metadata: Metadata = {
   },
   description: 'Zagraj w najlepsze automaty online, kasyno na żywo i obstaw zakłady sportowe w VulkanSpiele. Bonus powitalny do 2500€ + 350 darmowych spinów.',
   icons: {
-    icon: '/favicon.jpg',
-    shortcut: '/favicon.jpg',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   openGraph: {
     siteName: 'VulkanSpiele PL',

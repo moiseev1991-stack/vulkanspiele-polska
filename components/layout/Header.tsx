@@ -3,13 +3,15 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bell, ChevronDown, Gift, Menu, Package, Star, Target, X } from 'lucide-react'
+import { Bell, ChevronDown, Gift, Menu, Package, Star, Tag, Target, X, Zap } from 'lucide-react'
 
 const promoDropdownItems = [
-  { label: 'Bonusy',            href: '/bonuses',          Icon: Gift },
-  { label: 'Koło fortuny',      href: '/wheel-of-fortune', Icon: Star },
-  { label: 'Skrzynki z łupami', href: '/lootboxes',        Icon: Package },
-  { label: 'Questy',            href: '/quests',           Icon: Target },
+  { label: 'Bonusy',            href: '/bonuses',           Icon: Gift },
+  { label: 'Koło fortuny',      href: '/wheel-of-fortune',  Icon: Star },
+  { label: 'Skrzynki z łupami', href: '/lootboxes',         Icon: Package },
+  { label: 'Questy',            href: '/quests',            Icon: Target },
+  { label: 'Kod Promocyjny',    href: '/kod-promocyjny/',   Icon: Tag },
+  { label: 'Bonus bez Depozytu',href: '/bonus-bez-depozytu/',Icon: Zap },
 ]
 
 const navLinks: { label: string; href: string; hasDropdown?: boolean; isSpecial?: boolean }[] = [
