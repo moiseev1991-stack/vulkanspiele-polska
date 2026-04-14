@@ -81,7 +81,7 @@ export default function TournamentBanner({ tournament, games }: TournamentBanner
           {/* Buttons */}
           <div className="flex gap-3">
             <Link
-              href="#"
+              href="/go/"
               className="text-black font-bold text-sm px-7 py-2.5 rounded-md hover:bg-yellow-400 transition"
               style={{ background: '#FFD700' }}
             >
