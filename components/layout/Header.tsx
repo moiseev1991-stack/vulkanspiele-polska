@@ -98,14 +98,14 @@ export default function Header() {
             PL
           </span>
           <Link
-            href="#"
+            href="/go/"
             className="px-4 text-white text-[13px] font-semibold hover:bg-white/5 transition-colors rounded-md"
             style={{ height: '32px', display: 'flex', alignItems: 'center', border: '1px solid #555' }}
           >
             ZALOGUJ SIĘ
           </Link>
           <Link
-            href="#"
+            href="/go/"
             className="px-4 text-black text-[13px] font-bold hover:bg-yellow-400 transition-colors rounded-md"
             style={{ height: '32px', display: 'flex', alignItems: 'center', background: '#FFD700' }}
           >
@@ -195,10 +195,10 @@ export default function Header() {
               )
             )}
             <div className="flex flex-col gap-2 mt-4 px-4">
-              <Link href="#" className="w-full py-3 text-center rounded-lg text-white text-sm font-semibold" style={{ border: '1px solid #555' }}>
+              <Link href="/go/" className="w-full py-3 text-center rounded-lg text-white text-sm font-semibold" style={{ border: '1px solid #555' }}>
                 ZALOGUJ SIĘ
               </Link>
-              <Link href="#" className="w-full py-3 text-center rounded-lg text-black text-sm font-bold" style={{ background: '#FFD700' }}>
+              <Link href="/go/" className="w-full py-3 text-center rounded-lg text-black text-sm font-bold" style={{ background: '#FFD700' }}>
                 ZAREJESTRUJ SIĘ
               </Link>
             </div>
